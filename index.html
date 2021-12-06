@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./gg.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="./image/index/logo.jpg" alt="logo">
+        <div >
+            <a href="#"><img src="./image/index/my.jpg" alt=""></a>
+            <a href="#"><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </header>
+    <section class="search1">
+        <form action="#">
+            <input type="text" name="search" value="输入小区或商圈名开始找房咯">
+        </form>
+    </section>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#">
+                <img src="./image/index/index_03.png" alt="">
+                <p>二手房</p>
+            </a></li>
+            <li><a href="#">
+                <img src="./image/index/index_05.png" alt="">
+                <p>新房</p>
+            </a></li>
+            <li><a href="#">
+                <img src="./image/index/index_07.png" alt="">
+                <p>租房</p>
+            </a></li>
+            <li><a href="#">
+                <img src="./image/index/index_09.png" alt="">
+                <p>卖房</p>
+            </a></li>
+        </ul>
+    </nav>
+    <!-- 图片 -->
+    <section class="banner02">
+        <img src="./image/index/banner2.png" alt="">
+    </section>
+    <!-- 热门房源 -->
+    <section class="sec2">
+        <h2>
+            <strong>热门房源</strong>
+            <span>Hot&nbsp;house</span>
+        </h2>
+        <ul>
+            <li>
+                <div class="li_l">
+                    <img src="./image/index/img1.jpg" alt="" data-realSrc="./images/xiaowangz.jpg" class="images">
+                </div>
+                <div class="li_r">
+                    <h3>文化部中间层  一层带阁楼</h3>
+                    <p>"2室1厅96㎡南北" <strong>1105万</strong></p>
+                    <p>"红庙北里" <strong>14268元/平</strong></p>
+                    <div>
+                        <a href="#">学区房</a>
+                        <a href="#">独家</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="li_l">
+                    <img src="./image/index/img1.jpg" alt="" data-realSrc="./images/xiaowangz.jpg" class="images">
+                </div>
+                <div class="li_r">
+                    <h3>南北通透两居  精装修 无</h3>
+                    <p>2室1厅96㎡南北  <strong>320万</strong></p>
+                    <p>北京新天地  <strong>14268元/平</strong></p>
+                    <div>
+                        <a href="#">地铁房</a>
+                        <a href="#">独家</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="li_l">
+                    <img src="./image/index/img1.jpg" alt="" data-realSrc="./images/xiaowangz.jpg" class="images">
+                </div>
+                <div class="li_r">
+                    <h3>光大水墨  精装复式 稀缺</h3>
+                    <p>室1厅96㎡南北 <strong>280万</strong></p>
+                    <p>光大水墨 <strong>14268元/平</strong></p>
+                    <div>
+                        <a href="#">学区房</a>
+                        <a href="#">独家</a>
+                        <a href="#">满五唯一</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="hotcon">
+        <ul class="ul1">
+            <li><a href="#">热门关注</a></li>
+            <li><a href="#">友情链接</a></li>
+        </ul>
+        <div>
+            <ul>
+                <li><a href="">北京二手房</a></li>
+                <li><a href="">北京二手房价</a></li>
+                <li><a href="">海淀日租房</a></li>
+                <li><a href="">朝阳日租房</a></li>
+            </ul>
+            <ul>
+                <li><a href="">北京链家</a></li>
+                <li><a href="">青年家园</a></li>
+                <li><a href="">免税房源</a></li>
+                <li><a href="">满五唯一免税……</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="daohang">
+            <span><a href="">北京找房无忧网</a></span>
+            <span>></span>
+            <span><a href="">首页</a></span>
+           </div>
+        <div class="footmain">
+            <ul>
+                <li><a href="#">
+                    <img src="./image/index/apple.png" alt="">
+                    <div>
+                        <p>iphone</p>
+                        <p>客户端</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="./image/index/android.png" alt="">
+                    <div>
+                        <p>Android</p>
+                        <p>客户端</p>
+                    </div>
+                </a></li>
+            </ul>
+            <div class="copy">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="./js/rem.js"></script>
+<script>
+     function setRem() {
+        var ui_w = 375;
+        // 获取屏幕的宽度
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        // 通过js动态改变html根节点字体大小
+        var html_ = document.getElementsByTagName('html')[0];
+        html_.style.fontSize = (clientWidth/ui_w)*10 +'px';
+    }
+    // window.onresize 浏览器被重置大小执行事件
+    window.onresize = setRem;
+    // 图片懒加载
+    window.onload = function () {
+    function lode() {
+        //先获取已加载区域的高度
+        var scrollH = document.documentElement.scrollHeight || document.body.scrollHeight;
+        //屏幕的高度
+        var clientH = document.documentElement.clientHeight || document.body.clientHeight;
+
+        var images = document.getElementsByClassName('images');
+        for (var i = 0; i < images.length && images[i].getAttribute('data-realUrl'); i++) {
+            if (scrollH + clientH >= images[i].offsetTop-20) {
+                //启动懒加载  替换图片
+                var realUrl = images[i].getAttribute('data-realUrl');
+                images[i].src = realUrl;
+                //防止持续的加载已加载图片 所以已加载的图片 data-realUrl属性删除
+                images[i].removeAttribute('data-realUrl');
+            }
+        }
+    }
+    lode();
+    window.onscroll = lode;
+
+}
+</script>

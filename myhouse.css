@@ -1,0 +1,54 @@
+.lin {
+  height: 4rem;
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+.lin .sp1 {
+  font-weight: bold;
+}
+.lin span a {
+  text-decoration: none;
+  color: black;
+}
+.s_main {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.s_main ul {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+}
+.s_main ul li {
+  width: 95%;
+  height: 14rem;
+  border-bottom: 1px solid #ff8a00;
+  margin: 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.s_main ul li .li_l {
+  width: 35%;
+}
+.s_main ul li .li_l img {
+  width: 100%;
+}
+.s_main ul li .li_r {
+  width: 60%;
+  height: 10rem;
+}
+.s_main ul li .li_r h3 {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.8rem;
+}
+.s_main ul li .li_r p {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.s_main ul li .li_r p .sp_2 {
+  font-weight: bold;
+  color: #ff8a00;
+}

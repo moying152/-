@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找房无忧，我关注的小区</title>
+    <link rel="stylesheet" href="./gg.css">
+    <link rel="stylesheet" href="./zufang.css">
+</head>
+<body>
+    <header>
+        <img src="./image/index/logo.jpg" alt="logo">
+        <div >
+            <a href="#"><img src="./image/index/my.jpg" alt=""></a>
+            <a href="#"><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </header>
+    <div class="lin">
+        <span class="sp1"><a href="">首页</a></span>
+        <span>></span>
+        <span><a href="">北京租房</a></span>
+        <span>></span>
+        <span><a href="">房源信息</a></span>
+    </div>
+    <div class="imbg">
+        <input type="button" value="分享">
+    </div>
+    <div class="main_text">
+
+    </div>
+     <footer>
+       <div class="daohang">
+        <span><a href="">北京找房无忧网</a></span>
+        <span>></span>
+        <span><a href="">首页</a></span>
+       </div>
+        <div class="footmain">
+            <ul>
+                <li><a href="#">
+                    <img src="./image/index/apple.png" alt="">
+                    <div>
+                        <p>iphone</p>
+                        <p>客户端</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="./image/index/android.png" alt="">
+                    <div>
+                        <p>Android</p>
+                        <p>客户端</p>
+                    </div>
+                </a></li>
+            </ul>
+            <div class="copy">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function setRem() {
+        var ui_w = 375;
+        // 获取屏幕的宽度
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        // 通过js动态改变html根节点字体大小
+        var html_ = document.getElementsByTagName('html')[0];
+        html_.style.fontSize = (clientWidth/ui_w)*10 +'px';
+    }
+    // window.onresize 浏览器被重置大小执行事件
+    window.onresize = setRem;
+</script>
