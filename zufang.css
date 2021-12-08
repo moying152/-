@@ -27,3 +27,173 @@
   bottom: 1rem;
   right: 0;
 }
+.main_text {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+}
+.main_text h2 {
+  flex: 4;
+  height: 6rem;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.main_text .sp_1 {
+  flex: 1;
+  width: 5rem;
+  height: 6rem;
+  border-left: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_text .sp_1 img {
+  width: 3rem;
+  height: 3rem;
+}
+.main_text .sp_1 a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+.mess1 {
+  width: 100%;
+  height: 10rem;
+  background-color: #f5f5f5;
+  border: 1px solid #c7c7c7;
+  display: flex;
+  align-items: center;
+}
+.mess1 li {
+  width: 33%;
+  height: 5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-right: 1px solid #c7c7c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mess1 li span {
+  font-weight: bold;
+  color: #ff4800;
+}
+.mess2 {
+  width: 100%;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mess2 li {
+  width: 90%;
+  height: 5rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mess2 li span {
+  width: 50%;
+  height: 5rem;
+  line-height: 5rem;
+}
+.fangpin {
+  width: 100%;
+  margin: 1rem auto;
+  background-color: #f5f5f5;
+}
+.fangpin h2 {
+  width: 95%;
+  margin: 1rem auto;
+  height: 5rem;
+  text-indent: 2rem;
+  color: #ff8a00;
+  background: url(image/rentalList/right.png) no-repeat 33rem 1.2rem;
+  font-size: 2.2rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #c7c7c7;
+}
+.fangpin p {
+  width: 95%;
+  margin: 0 0 1rem 2rem;
+  font-size: 1.5rem;
+}
+.fangpin .p1 {
+  width: 95%;
+  height: 4rem;
+  line-height: 4rem;
+  margin: 0 0 1rem 2rem;
+  font-size: 1.5rem;
+}
+.fangpin .p1 span {
+  color: #ff5100;
+}
+.fangpin div {
+  width: 95%;
+  margin: 0 2.5%;
+  border: 1px solid #cecece;
+}
+.fangpin div h3 {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  text-indent: 2rem;
+}
+.fangpin div img {
+  width: 95%;
+  margin: 0 2.5%;
+}
+.lxr {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+}
+.lxr .lxr_l {
+  display: flex;
+  flex: 2;
+}
+.lxr .lxr_l img {
+  width: 5rem;
+  height: 5rem;
+}
+.lxr .lxr_l div {
+  text-indent: 1rem;
+  font-size: 1.5rem;
+}
+.lxr .phone {
+  width: 11rem;
+  height: 6rem;
+  flex: 1;
+  display: flex;
+}
+.lxr .phone a:first-of-type {
+  width: 5rem;
+  height: 5rem;
+  color: #5dcb96;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.lxr .phone a:first-of-type img {
+  width: 4rem;
+  height: 4rem;
+}
+.lxr .phone a:last-of-type {
+  width: 5rem;
+  height: 5rem;
+  color: #5baede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lxr .phone a:last-of-type img {
+  width: 4rem;
+  height: 4rem;
+}

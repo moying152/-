@@ -18,25 +18,25 @@
     </header>
     <section class="search1">
         <form action="#">
-            <input type="text" name="search" value="输入小区或商圈名开始找房咯">
+            <input id="serch" type="text" name="search" value="">
         </form>
     </section>
     <!-- 导航栏 -->
     <nav>
         <ul>
-            <li><a href="#">
+            <li><a href="./二手列表.html">
                 <img src="./image/index/index_03.png" alt="">
                 <p>二手房</p>
             </a></li>
-            <li><a href="#">
+            <li><a href="./index.html">
                 <img src="./image/index/index_05.png" alt="">
                 <p>新房</p>
             </a></li>
-            <li><a href="#">
+            <li><a href="./租房列表.html">
                 <img src="./image/index/index_07.png" alt="">
                 <p>租房</p>
             </a></li>
-            <li><a href="#">
+            <li><a href="./index.html">
                 <img src="./image/index/index_09.png" alt="">
                 <p>卖房</p>
             </a></li>
@@ -55,7 +55,7 @@
         <ul>
             <li>
                 <div class="li_l">
-                    <img src="./image/index/img1.jpg" alt="" data-realSrc="./images/xiaowangz.jpg" class="images">
+                    <img src="./image/index/logo.png" alt="" data-realSrc="./image/index/img1.jpg" class="images">
                 </div>
                 <div class="li_r">
                     <h3>文化部中间层  一层带阁楼</h3>
@@ -69,7 +69,7 @@
             </li>
             <li>
                 <div class="li_l">
-                    <img src="./image/index/img1.jpg" alt="" data-realSrc="./images/xiaowangz.jpg" class="images">
+                    <img src="./image/index/logo.png" alt="" data-realSrc="./image/index/img2.png" class="images">
                 </div>
                 <div class="li_r">
                     <h3>南北通透两居  精装修 无</h3>
@@ -83,7 +83,7 @@
             </li>
             <li>
                 <div class="li_l">
-                    <img src="./image/index/img1.jpg" alt="" data-realSrc="./images/xiaowangz.jpg" class="images">
+                    <img src="./image/index/logo.png" alt="" data-realSrc="./image/index/img3.png" class="images">
                 </div>
                 <div class="li_r">
                     <h3>光大水墨  精装复式 稀缺</h3>
@@ -105,8 +105,8 @@
         </ul>
         <div>
             <ul>
-                <li><a href="">北京二手房</a></li>
-                <li><a href="">北京二手房价</a></li>
+                <li><a href="./二手列表.html">北京二手房</a></li>
+                <li><a href="./二手列表.html">北京二手房价</a></li>
                 <li><a href="">海淀日租房</a></li>
                 <li><a href="">朝阳日租房</a></li>
             </ul>
@@ -118,11 +118,25 @@
             </ul>
         </div>
     </section>
+    <div class="adv">
+        <img class="close" onclick="clos()" src="./image/index/close.png" alt="">
+        <div class="adv_l">
+            <img src="./image/index/download.png" alt="">
+            <div>
+                <p class="p1">找房无忧</p>
+                <p>市场行情，一手掌握！</p>
+            </div>
+            
+        </div>
+        <div class="adv_r">
+            免费下载
+        </div>
+    </div>
     <footer>
         <div class="daohang">
-            <span><a href="">北京找房无忧网</a></span>
+            <span><a href="./index.html">北京找房无忧网</a></span>
             <span>></span>
-            <span><a href="">首页</a></span>
+            <span><a href="./index.html">首页</a></span>
            </div>
         <div class="footmain">
             <ul>
@@ -163,25 +177,43 @@
     window.onresize = setRem;
     // 图片懒加载
     window.onload = function () {
-    function lode() {
-        //先获取已加载区域的高度
-        var scrollH = document.documentElement.scrollHeight || document.body.scrollHeight;
-        //屏幕的高度
-        var clientH = document.documentElement.clientHeight || document.body.clientHeight;
+    load();
+}
+function load() {
+    // 获取已经加载的区域
+    var scrooltop = document.documentElement.scrollTop || document.body.scrollTop;
+    // 获取当前屏幕的高度
+    var clientH = document.documentElement.clientHeight || document.body.clientHeight;
 
-        var images = document.getElementsByClassName('images');
-        for (var i = 0; i < images.length && images[i].getAttribute('data-realUrl'); i++) {
-            if (scrollH + clientH >= images[i].offsetTop-20) {
-                //启动懒加载  替换图片
-                var realUrl = images[i].getAttribute('data-realUrl');
-                images[i].src = realUrl;
-                //防止持续的加载已加载图片 所以已加载的图片 data-realUrl属性删除
-                images[i].removeAttribute('data-realUrl');
-            }
+    // 获取图片节点
+    var images = document.getElementsByClassName('images');
+
+    // 遍历所有的图片
+
+    for (var img of images) {
+        // 图片未加载的区域 -20 
+        if ((img.offsetTop+200) <= (clientH + scrooltop)  && img.getAttribute('data-realSrc')) {
+            // 开始替换图片 把真实路径 替换到src中
+            // 获取真实路径
+            var realSrc = img.getAttribute('data-realSrc');
+            img.src = realSrc;
+
+            // 删除属性
+            img.removeAttribute('data-realSrc');
         }
     }
-    lode();
-    window.onscroll = lode;
+}
 
+window.onscroll = load;
+// 关闭按钮
+var clo=document.getElementsByClassName("adv")[0];
+function clos(){
+    clo.style.display="none";
+}
+
+var sou=document.getElementById("serch");
+sou.value='输入小区或商圈名开始找房咯';
+sou.onfocus=function(){
+    sou.value='';
 }
 </script>

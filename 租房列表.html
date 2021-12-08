@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找房无忧-出租房源</title>
+    <link rel="stylesheet" href="./gg.css">
+    <link rel="stylesheet" href="./zflb.css">
+</head>
+<body>
+    <header>
+        <img src="./image/index/logo.jpg" alt="logo">
+        <div >
+            <a href="#"><img src="./image/index/my.jpg" alt=""></a>
+            <a href="#"><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </header>
+    <div class="lin">
+        <span class="sp1"><a href="./index.html">首页</a></span>
+        <span>></span>
+        <span><a href="./index.html">北京租房</a></span>
+    </div>
+    <section class="reash">
+        <input type="text" value="请输入小区或商圈名称" >
+        <span>|</span>
+        <img src="./image/SecondHandList/search_03.png" alt="">
+    </section>
+    <section class="list">
+        <ul>
+            <li onclick="reg()"><a href="#">区域</a> </li>
+            <li onclick="pric()"><a href="#">价格</a> </li>
+            <li onclick="cla()"><a href="#">房型</a> </li>
+            <li onclick="mor()"><a href="#">更多</a> </li>
+        </ul>
+    </section>
+    <section class="region">
+        <ul>
+            <li onclick="reg()"><a  class="col" href="">区域</a> </li>
+            <li onclick="pric()"><a href="#">价格</a> </li>
+            <li onclick="cla()"><a href="#">房型</a> </li>
+            <li onclick="mor()"><a href="#">更多</a> </li>
+        </ul>
+        <div class="re_l">
+            <h2 class="col">区域</h2>
+            <h2>地铁</h2>
+        </div>
+        <div class="re_r">
+            <ul>
+                <li><a href="#">附近</a></li>
+                <li><a class="col" href="#">不限</a></li>
+                <li><a href="#">不限</a></li>
+                <li><a href="#">安贞</a></li>
+                <li><a class="col" href="#">朝阳</a></li>
+                <li><a href="#">奥林匹克公园</a></li>
+                <li><a href="#">海淀</a></li>
+                <li><a href="#">百子湾</a></li>
+                <li><a href="#">昌平</a></li>
+                <li><a href="#">北工大</a></li>
+                <li><a href="#">丰台</a></li>
+                <li><a href="#">北苑</a></li>
+                <li><a href="#">石景山</a></li>
+                <li><a href="#">CBD</a></li>
+            </ul>
+        </div>
+        <div class="hide"></div>
+    </section>
+    <section class="pic">
+        <ul class="ul1">
+            <li onclick="reg()"><a href="#">区域</a> </li>
+            <li onclick="pric()"><a class="col" href="#">价格</a> </li>
+            <li onclick="cla()"><a href="#">房型</a> </li>
+            <li onclick="mor()"><a href="#">更多</a> </li>
+        </ul>
+        <ul class="ul2">
+            <li><a href="#">不限</a></li>
+            <li><a href="#">100万以下</a></li>
+            <li><a href="#">100万-150万</a></li>
+            <li><a href="#">150万-200万</a></li>
+            <li><a href="#">200万-250万</a></li>
+            <li><a href="#">250万-300万</a></li>
+            <li><a href="#">自定义价格</a></li>
+        </ul>
+        <div class="hide"></div>
+    </section>
+    <section class="clas">
+        <ul class="ul1">
+            <li onclick="reg()"><a href="#">区域</a> </li>
+            <li onclick="pric()"><a href="#">价格</a> </li>
+            <li onclick="cla()"><a class="col" href="#">房型</a> </li>
+            <li onclick="mor()"><a href="#">更多</a> </li>
+        </ul>
+        <ul class="ul2">
+            <li><a href="#">不限</a></li>
+            <li><a href="#">1室</a><img src="./image/SecondHandList/ok.png" alt=""></li>
+            <li><a href="#">2室</a><img src="./image/SecondHandList/ok.png" alt=""></li>
+            <li><a href="#">3室</a><img src="./image/SecondHandList/ok.png" alt=""></li>
+            <li><a href="#">4室</a><img src="./image/SecondHandList/ok.png" alt=""></li>
+            <li><a href="#">5室</a><img src="./image/SecondHandList/ok.png" alt=""></li>
+        </ul><br>
+        <input type="button" value="确定">
+    </section>
+    <section class="more">
+        <ul class="ul1">
+            <li onclick="reg()"><a href="#">区域</a> </li>
+            <li onclick="pric()"><a href="#">价格</a> </li>
+            <li onclick="cla()"><a href="#">房型</a> </li>
+            <li onclick="mor()"><a class="col" href="#">更多</a> </li>
+        </ul>
+        <div>
+            <h3>区域</h3>
+           <ul>
+            <li><a href="">南</a></li>
+            <li><a href="">南北</a></li>
+            <li><a href="">东</a></li>
+            <li><a href="">西</a></li>
+            <li><a href="">北</a></li>
+           </ul> 
+        </div>
+        <div>
+            <h3>面积（平方）</h3>
+           <ul>
+            <li><a href="">50以下</a></li>
+            <li><a href="">50-70</a></li>
+            <li><a href="">70-90</a></li>
+            <li><a href="">90-110</a></li>
+            <li><a href="">110-130</a></li>
+            <li><a href="">130-150</a></li>
+            <li><a href="">150-200</a></li>
+            <li><a href="">200以上</a></li>
+           </ul> 
+        </div>
+        <div>
+            <h3>标签</h3>
+           <ul>
+            <li><a href="">学区房</a></li>
+            <li><a href="">地铁房</a></li>
+            <li><a href="">不限购</a></li>
+            <li><a href="">满两年</a></li>
+            <li><a href="">满五唯一</a></li>
+            <li><a href="">降价</a></li>
+            <li><a href="">新上</a></li>
+            <li><a href="">独家</a></li>
+            <li><a href="">有钥匙</a></li>
+           </ul> 
+        </div>
+        <div>
+            <h3>楼龄</h3>
+           <ul>
+            <li><a href="">5年以内</a></li>
+            <li><a href="">10年以内</a></li>
+            <li><a href="">10-20年</a></li>
+            <li><a href="">20年以上</a></li>
+           </ul> 
+        </div>
+    </section>
+    <section class="mess">
+        <a href="./租房详情.html">
+        <ul>
+            <li>
+                <div class="li_l">
+                    <img src="./image/rentalList/img1.png" alt="">
+                </div>
+                <div class="li_r">
+                    <h3>南沙滩小区 超低价急售</h3>
+                    <p>2室1厅 96㎡ 南北</p>
+                    <p>青岛新天地</p>
+                    <p><span class="sp_1">集中供暖</span>
+                       <span class="sp_2">3700元/月</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="li_l">
+                    <img src="./image/rentalList/img2.png" alt="">
+                </div>
+                <div class="li_r">
+                    <h3>青年汇二期 免税三居</h3>
+                    <p>3室2厅 129㎡ 南北</p>
+                    <p>青年汇家园</p>
+                    <p><span class="sp_1">集中供暖</span>
+                       <span class="sp_2">4610元/月</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="li_l">
+                    <img src="./image/rentalList/img3.png" alt="">
+                </div>
+                <div class="li_r">
+                    <h3>博雅德源稀缺两居 钥匙房源</h3>
+                    <p>2室2厅 126m² 南北</p>
+                    <p>西二旗</p>
+                    <p><span class="sp_1">集中供暖</span>
+                       <span class="sp_2">3420元/月</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="li_l">
+                    <img src="./image/rentalList/img4.png" alt="">
+                </div>
+                <div class="li_r">
+                    <h3>朝阳北路赠车库自住首选</h3>
+                    <p>5室3厅 260m² 南北</p>
+                    <p>武夷花园二手房</p>
+                    <p><span class="sp_1">集中供暖</span>
+                       <span class="sp_2">5408元/月</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="li_l">
+                    <img src="./image/rentalList/img5.png" alt="">
+                </div>
+                <div class="li_r">
+                    <h3> 金汉旭城 东南金角一居</h3>
+                    <p>1室1厅 60m² 东南</p>
+                    <p>鲁谷二手房</p>
+                    <p><span class="sp_1">集中供暖</span>
+                       <span class="sp_2">3300元/月</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </a>
+    </section>
+    <footer>
+       <div class="daohang">
+        <span><a href="">北京找房无忧网</a></span>
+        <span>></span>
+        <span><a href="">首页</a></span>
+       </div>
+        <div class="footmain">
+            <ul>
+                <li><a href="#">
+                    <img src="./image/index/apple.png" alt="">
+                    <div>
+                        <p>iphone</p>
+                        <p>客户端</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="./image/index/android.png" alt="">
+                    <div>
+                        <p>Android</p>
+                        <p>客户端</p>
+                    </div>
+                </a></li>
+            </ul>
+            <div class="copy">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="./js/rem.js"></script>
+<script src="./js/eslb.js"></script>
+<script>
+    function setRem() {
+        var ui_w = 375;
+        // 获取屏幕的宽度
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        // 通过js动态改变html根节点字体大小
+        var html_ = document.getElementsByTagName('html')[0];
+        html_.style.fontSize = (clientWidth/ui_w)*10 +'px';
+    }
+    // window.onresize 浏览器被重置大小执行事件
+    window.onresize = setRem;
+</script>

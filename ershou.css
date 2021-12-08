@@ -1,0 +1,252 @@
+.mess1 {
+  width: 94%;
+  padding: 0 3%;
+}
+.mess1 h2 {
+  width: 98%;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 6rem;
+}
+.mess1 p {
+  font-size: 1.4rem;
+  height: 2.5rem;
+}
+.mess1 p span {
+  color: orangered;
+}
+.mess1 .p_tim {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+}
+.mess1 .lab {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  color: #9b9b9b;
+  background-color: #dee9f0;
+}
+.mess2 {
+  width: 100%;
+}
+.mess2 ul {
+  width: 95%;
+  list-style: none;
+  padding: 2.5%;
+}
+.mess2 ul li {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  display: flex;
+  border-bottom: 1px solid #cacaca;
+}
+.mess2 ul li span {
+  width: 50%;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+}
+.mess2 ul p {
+  text-align: center;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  color: #b6b6b6;
+}
+.mess3 h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  border-bottom: 1px solid #c2c2c2;
+  color: #ff9326;
+}
+.mess3 p {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #c2c2c2;
+}
+.mess3 .tese {
+  text-align: center;
+  margin: 0 auto;
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #c0c0c0;
+  color: #b6b6b6;
+  font-size: 1.3rem;
+}
+.mess4 {
+  width: 100%;
+}
+.mess4 h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  border-bottom: 1px solid #c2c2c2;
+  color: #ff9326;
+}
+.mess4 .hu {
+  width: 95%;
+  height: 10rem;
+  padding: 0 2.5%;
+  display: flex;
+  align-items: center;
+}
+.mess4 .hu img {
+  width: 7rem;
+  height: 7rem;
+}
+.mess4 .hu div {
+  margin: 0 1rem;
+}
+.mess4 .hu div h3 {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+.mess4 .hu div p {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+}
+.mess4 .hu div span {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  color: #9b9b9b;
+  background-color: #dee9f0;
+}
+.mess5 {
+  width: 95%;
+  padding: 0 2.5%;
+}
+.mess5 h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  border-bottom: 1px solid #c2c2c2;
+}
+.mess5 p {
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #c2c2c2;
+}
+.mess5 p span {
+  color: #bbbbbb;
+}
+.mess5 .tese {
+  text-align: center;
+  margin: 0 auto;
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #c0c0c0;
+  color: #b6b6b6;
+  font-size: 1.3rem;
+}
+.mess6 {
+  width: 95%;
+  padding: 0 2.5%;
+}
+.mess6 h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  border-bottom: 1px solid #c2c2c2;
+}
+.mess6 div {
+  width: 95%;
+  margin: 2rem auto;
+}
+.mess7 h2 {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #c9c9c9;
+  text-indent: 2rem;
+}
+.mess7 ul {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.mess7 ul li {
+  width: 100%;
+}
+.mess7 ul li div {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  margin: 1rem 0;
+}
+.mess7 ul li div .li_l {
+  width: 30%;
+}
+.mess7 ul li div .li_l img {
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto;
+}
+.mess7 ul li div .li_r {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.mess7 ul li div .li_r h3 {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mess7 ul li div .li_r p {
+  color: #8b8b8b;
+  display: flex;
+  justify-content: space-between;
+}
+.mess7 ul li div .li_r p strong {
+  color: red;
+}
+.mess7 ul li div .li_r div {
+  width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: left;
+}
+.mess7 ul li div .li_r div a {
+  color: #849aae;
+  text-decoration: none;
+  background-color: #d4d4d4;
+}
+.mess7 ul li .tui {
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.2rem;
+  text-indent: 2rem;
+  background-color: #dfdfdf;
+}
+.more {
+  width: 95%;
+  margin: 2rem auto;
+  padding: 0 2.5%;
+}
+.more p {
+  text-align: center;
+  margin: 0 auto;
+  height: 4rem;
+  line-height: 4rem;
+  border-top: 1px solid #c0c0c0;
+  color: #b6b6b6;
+  font-size: 1.3rem;
+}
